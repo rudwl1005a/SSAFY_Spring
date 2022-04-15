@@ -10,7 +10,7 @@ public class CalcMain {
 //		int n = calc.add(7, 3);
 //		System.out.println(n);
 		
-		// Spring
+		// Spring - xml사용
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("calc-xml.xml");
 		Calculator calc = (Calculator) context.getBean("calculator");
 		

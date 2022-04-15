@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> JSON Test </h1>
+	<button id="sendEmp">Emp 보내기</button>
+	
+	<script>
+		const emp = {
+			employeeId: 1500,
+			firstName: 'Gildong',
+			lastName: 'Hong',
+			email: 'gildong@hong',
+			hireDate: '2022-04-04'
+		}
+	
+		window.onload = function(){
+			document.querySelector("#sendEmp").onclick = async function(){
+				let fetchOption = {
+					method: 'POST',
+					headers: {
+						'Content-Type' : 'application/json'
+					},
+					body: JSON.stringify(emp)
+				}
+				
+				try {
+					let response = await fetch('/myapp/emp', fetchOption);
+					let data = await response.json();
+					console.log(data);
+				} catch(error){
+					console.log(error)
+				}
+			}
+		}
+	</script>
+</body>
+</html>

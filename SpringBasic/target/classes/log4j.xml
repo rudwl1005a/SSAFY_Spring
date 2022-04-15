@@ -10,9 +10,16 @@
 		</layout>
 	</appender>
 	
+	<!-- (일상적, 일반적 상황) TRACE > DEBUG > INFO > WARNING > ERROR > FATAL (심각, 오류) -->
+	<!-- level로 선택한 것보다 심각한 것들만 출력 -> info라면 trace,debug는 출력하지 않는다 -->
 	<!-- Application Loggers -->
 	<logger name="com.mycom.myapp">
 		<level value="info" />
+	</logger>
+	
+	<!-- 특정 package마다 logger level 설정 가능 -->
+	<logger name="com.mycom.myapp.aspect">
+		<level value="debug" />
 	</logger>
 	
 	<!-- 3rdparty Loggers -->
