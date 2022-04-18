@@ -7,6 +7,10 @@
 <body>
 	<h1> JSON Test </h1>
 	<button id="sendEmp">Emp 보내기</button>
+	<button id="sendEmpList">Emp List 보내기</button>
+	<button id="receiveEmp">Emp 받기</button>
+	<button id="receiveEmpList">Emp List 받기</button>
+	<button id="receiveLDT">LocalDateTime 받기</button>
 	
 	<script>
 		const emp = {
@@ -16,6 +20,30 @@
 			email: 'gildong@hong',
 			hireDate: '2022-04-04'
 		}
+		
+		const empList = [
+			{
+				employeeId: 1500,
+				firstName: 'Gildong',
+				lastName: 'Hong',
+				email: 'gildong@hong',
+				hireDate: '2022-04-04'
+			},
+			{
+				employeeId: 1600,
+				firstName: 'Gildong2',
+				lastName: 'Hong',
+				email: 'gildong2@hong',
+				hireDate: '2022-04-05'
+			},
+			{
+				employeeId: 1700,
+				firstName: 'Gildong3',
+				lastName: 'Hong',
+				email: 'gildong3@hong',
+				hireDate: '2022-04-06'
+			}
+		]
 	
 		window.onload = function(){
 			document.querySelector("#sendEmp").onclick = async function(){
@@ -29,6 +57,66 @@
 				
 				try {
 					let response = await fetch('/myapp/emp', fetchOption);
+					let data = await response.json();
+					console.log(data);
+				} catch(error){
+					console.log(error)
+				}
+			}
+			
+			document.querySelector("#sendEmpList").onclick = async function(){
+				let fetchOption = {
+					method: 'POST',
+					headers: {
+						'Content-Type' : 'application/json'
+					},
+					body: JSON.stringify(empList)
+				}
+				
+				try {
+					let response = await fetch('/myapp/empList', fetchOption);
+					let data = await response.json();
+					console.log(data);
+				} catch(error){
+					console.log(error)
+				}
+			}
+			
+			document.querySelector("#receiveEmp").onclick = async function(){
+				let fetchOption = {
+					method: 'GET'
+				}
+				
+				try {
+					let response = await fetch('/myapp/empDetail/12345', fetchOption); // 12345 key값을 가진 emp
+					let data = await response.json();
+					console.log(data);
+				} catch(error){
+					console.log(error)
+				}
+			}
+			
+			document.querySelector("#receiveEmpList").onclick = async function(){
+				let fetchOption = {
+					method: 'GET'
+				}
+				
+				try {
+					let response = await fetch('/myapp/empList', fetchOption);
+					let data = await response.json();
+					console.log(data);
+				} catch(error){
+					console.log(error)
+				}
+			}
+			
+			document.querySelector("#receiveLDT").onclick = async function(){
+				let fetchOption = {
+					method: 'GET'
+				}
+				
+				try {
+					let response = await fetch('/myapp/LocalDateTime', fetchOption);
 					let data = await response.json();
 					console.log(data);
 				} catch(error){
