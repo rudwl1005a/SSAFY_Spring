@@ -1,6 +1,8 @@
 package com.mycom.mybatis.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -79,6 +81,50 @@ public class DBController {
 	public int empDelete(int employeeId) {
 		System.out.println(employeeId);
 		return service.empDelete(employeeId);
+	}
+	
+	// 객체 리스트 ResultMap
+	@GetMapping(value = "/empListResultMap")
+	@ResponseBody
+	public List<EmpDto> empListResultMap() {
+		List<EmpDto> list = service.empList();
+		return list;
+	}
+	
+	// 파라미터가 여러개일때 - 1. map
+	@GetMapping(value = "/empListParameterMap")
+	@ResponseBody
+	public List<EmpDto> empListParameterMap(String firstName, String lastName) {
+		Map<String, String> map = new HashMap<>();
+		map.put("firstName", firstName);
+		map.put("lastName", lastName);
+		
+		List<EmpDto> list = service.empListParameterMap(map);
+		return list;
+	}
+	
+	// 파라미터가 여러개일때 - 2. @Param
+	@GetMapping(value = "/empListParameterMap2")
+	@ResponseBody
+	public List<EmpDto> empListParameterMap2(String firstName, String lastName) {
+		List<EmpDto> list = service.empListParameterMap2(firstName, lastName);
+		return list;
+	}
+	
+	// 파라미터가 여러개일때 - 3. DTO
+	@GetMapping(value = "/empListParameterMap3")
+	@ResponseBody
+	public List<EmpDto> empListParameterMap3(EmpDto dto) {
+		List<EmpDto> list = service.empListParameterMap3(dto);
+		return list;
+	}
+	
+	// Like 검색
+	@GetMapping(value = "/empListLike")
+	@ResponseBody
+	public List<EmpDto> empListLike(String searchWord) {
+		List<EmpDto> list = service.empListLike(searchWord);
+		return list;
 	}
 	
 }

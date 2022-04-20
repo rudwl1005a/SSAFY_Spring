@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mycom.mybatis.dao.DBDao">
+
+	<!-- ResultMap -->
+	<resultMap id="empMap" type="com.mycom.mybatis.dto.EmpDto">
+		<result property="employeeId" column="employeeId"></result>
+		<result property="firstName" column="first_name"></result>
+		<result property="lastName" column="last_name"></result>
+		<result property="email" column="email"></result>
+		<result property="hireDate" column="hiredate"></result>
+	</resultMap>
+	
+	<!-- 쿼리문 작성 -->
+	<!-- DAO : public EmpDto empDetail(int employeeId) -->
+	<select id="empDetail" parameterType="int" resultType="com.mycom.mybatis.dto.EmpDto">
+		SELECT employeeId, first_name, last_name, email, hiredate
+		FROM emp
+		WHERE employeeId = #{employeeId}
+	</select>
+	
+	<!-- List<EmpDto> empList() -->
+	<!--
+	<select id="empList" resultType="com.mycom.mybatis.dto.EmpDto">
+		SELECT employeeId, first_name, last_name, email, hiredate
+		FROM emp
+	</select>
+	-->
+	<!-- ResultMap으로 수정 -->
+	<select id="empList" resultMap="empMap">
+		SELECT employeeId, first_name, last_name, email, hiredate
+		FROM emp
+	</select>
+	
+	<!-- public int empInsert(EmpDto dto) -->
+	<insert id="empInsert" parameterType="com.mycom.mybatis.dto.EmpDto">
+		INSERT INTO emp (employeeId, first_name, last_name, email, hiredate)
+		VALUES (#{employeeId}, #{firstName}, #{lastName}, #{email}, #{hireDate})
+	</insert>
+	
+	<!-- public int empUpdate(EmpDto dto) -->
+	<update id="empUpdate" parameterType="com.mycom.mybatis.dto.EmpDto">
+		UPDATE emp
+		SET first_name = #{firstName}, last_name = #{lastName}, email = #{email}, hiredate = #{hireDate}
+		WHERE employeeId = #{employeeId}
+	</update>
+	
+	<!-- public int empDelete(int employeeId) -->
+	<delete id="empDelete" parameterType="int">
+		DELETE FROM emp
+		WHERE employeeId = #{employeeId}
+	</delete>
+	
+	<!-- 파라미터가 여러개일때 -->
+	<!-- 1.map사용 -->
+	<select id="empListParameterMap" parameterType="map" resultMap="empMap">
+		SELECT employeeId, first_name, last_name, email, hiredate
+		FROM emp
+		WHERE first_name = #{firstName} AND last_name = #{lastName}
+	</select>
+	
+	<!-- 2. @param사용 -->
+	<select id="empListParameterMap2" parameterType="map" resultMap="empMap">
+		SELECT employeeId, first_name, last_name, email, hiredate
+		FROM emp
+		WHERE first_name = #{firstName} AND last_name = #{lastName}
+	</select>
+	
+	<!-- 3. DTO사용 -->
+	<select id="empListParameterMap3" parameterType="map" resultMap="empMap">
+		SELECT employeeId, first_name, last_name, email, hiredate
+		FROM emp
+		WHERE first_name = #{firstName} AND last_name = #{lastName}
+	</select>
+	
+	<!-- Like 검색 -->
+	<select id="empListLike" parameterType="string" resultMap="empMap">
+		SELECT employeeId, first_name, last_name, email, hiredate
+		FROM emp
+		WHERE first_name LIKE CONCAT('%', #{searchWord}, '%')
+	</select>
+
+</mapper>
