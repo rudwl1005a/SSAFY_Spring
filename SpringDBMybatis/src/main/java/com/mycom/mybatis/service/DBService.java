@@ -3,6 +3,8 @@ package com.mycom.mybatis.service;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.mycom.mybatis.dto.EmpDto;
 
 public interface DBService {
@@ -17,4 +19,6 @@ public interface DBService {
 	public List<EmpDto> empListParameterMap3(EmpDto dto); // DTO
 	
 	public List<EmpDto> empListLike(String searchWord);
+	
+	public List<EmpDto> empListWhereIf(String firstName, String lastName); // where if
 }

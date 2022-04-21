@@ -79,5 +79,19 @@
 		FROM emp
 		WHERE first_name LIKE CONCAT('%', #{searchWord}, '%')
 	</select>
+	
+	<!-- 동적 SQL -->
+	<select id="empListWhereIf" parameterType="map" resultMap="empMap">
+		SELECT employeeId, first_name, last_name, email, hiredate
+		FROM emp
+		<where>
+			<if test="firstName != null and !firstName.isEmpty()">
+				first_name = #{firstName}
+			</if>
+			<if test="lastName != null and !firstName.isEmpty()">
+				AND last_name = #{lastName}
+			</if>
+		</where>
+	</select>
 
 </mapper>

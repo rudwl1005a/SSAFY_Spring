@@ -18,6 +18,8 @@
 	<button id="btnEmpListResultMap">Emp 목록 ResultMap</button>
 	<button id="btnEmpListParameterMap">Emp 목록 ParameterMap</button>
 	<button id="btnEmpListLike">Emp 목록 Like 검색</button>
+	<br><br>
+	<button id="btnEmpListWhereIf">Emp WhereIf 목록</button>
 	
 	
 	
@@ -179,6 +181,24 @@
 			let searchWord = '길동';
 			let url = '/mybatis/empListLike';
 			let urlParams = `?searchWord=${searchWord}`;
+			try {
+				let response = await fetch(url + urlParams);
+				let data = await response.json();
+				console.log(data);
+			} catch(error){
+				console.error(error);
+			}
+		}
+		
+		// 동적 sql - WhereIf
+		document.querySelector("#btnEmpListWhereIf").onclick = async function(){
+			let firstName = '길동';
+			let lastName = '홍';
+			let url = '/mybatis/empListWhereIf';
+			let urlParams = `?firstName=${firstName}&lastName=${lastName}`;
+			//let urlParams = `?firstName=${firstName}`;
+			//let urlParams = `?lastName=${lastName}`;
+			//let urlParams = ``;
 			try {
 				let response = await fetch(url + urlParams);
 				let data = await response.json();

@@ -60,4 +60,9 @@ public class DBServiceImpl implements DBService {
 		return dao.empListLike(searchWord);
 	}
 
+	@Override
+	public List<EmpDto> empListWhereIf(String firstName, String lastName) {
+		return dao.empListWhereIf(firstName, lastName);
+	}
+
 }

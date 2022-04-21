@@ -21,4 +21,6 @@ public interface DBDao {
 	public List<EmpDto> empListParameterMap3(EmpDto dto); // DTO
 	
 	public List<EmpDto> empListLike(String searchWord);
+	
+	public List<EmpDto> empListWhereIf(@Param("firstName") String firstName, @Param("lastName") String lastName); // where if
 }

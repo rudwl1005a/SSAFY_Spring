@@ -127,4 +127,12 @@ public class DBController {
 		return list;
 	}
 	
+	// WhereIf
+	@GetMapping(value = "/empListWhereIf")
+	@ResponseBody
+	public List<EmpDto> empListWhereIf(String firstName, String lastName) {
+		List<EmpDto> list = service.empListWhereIf(firstName, lastName);
+		return list;
+	}
+	
 }
