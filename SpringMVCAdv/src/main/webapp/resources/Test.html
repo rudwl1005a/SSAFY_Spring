@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h4>Async Exception Test</h4>
+	<button id="btnException">예외 발생!</button>
+
+	<h4>Transaction Test</h4>
+	<button id="btnTransaction">트랜잭션 발생!</button>
+	
+<script>
+	window.onload = function(){
+		// 예외
+	    document.querySelector("#btnException").onclick = async function(){
+	        try{
+	            let response = await fetch('/myadv/exception')
+	            let data = await response.json();
+	            if( data.result == "ajax_exception"){
+	                alert("서버에서 예외가 발생했습니다.");
+	            }
+	        } catch(error){
+	            console.log(error);
+	        }
+	    }
+	    
+		// 트랜잭션
+	    document.querySelector("#btnTransaction").onclick = async function(){
+	    	let studentData = {
+	    		studentNm: '삼길동',
+	    		email: 'sam@hong.com',
+	    		phone: '010-2222-2222'
+	    	}
+	    	
+	    	let fetchOptions = {
+	    		method: 'POST',
+	    		headers: {
+	    			'Content-Type': 'application/json'
+	    		},
+	    		body: JSON.stringify(studentData) // json문자열로 변환
+	    	}
+	    	
+	        try{
+	            let response = await fetch('/myadv/tx/students', fetchOptions)
+	            let data = await response.json();
+	        } catch(error){
+	            console.log(error);
+	        }
+	    }
+	}
+</script>
+</body>
+</html>

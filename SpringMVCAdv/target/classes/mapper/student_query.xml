@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mycom.myadv.dao.StudentDao">
+
+	<insert id="studentInsert" parameterType="com.mycom.myadv.dto.StudentDto">
+		INSERT INTO student (student_id, student_nm, email, phone)
+		VALUES (#{studentId}, #{studentNm}, #{email}, #{phone})
+	</insert>
+	
+	<select id="studentDetail" parameterType="int" resultType="com.mycom.myadv.dto.StudentDto">
+		SELECT student_id, student_nm, email, phone
+		FROM student
+		WHERE student_id = #{studentId}
+	</select>
+
+</mapper>
