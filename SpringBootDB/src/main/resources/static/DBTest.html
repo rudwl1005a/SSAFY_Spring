@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>DB Test</h1>
+	<button id="btnEmpDetail">Emp 상세</button>
+	<button id="btnEmpList">Emp List 상세</button>
+	<button id="btnEmpInsert">Emp 등록</button>
+	<button id="btnEmpUpdate">Emp 수정</button>
+	<button id="btnEmpDelete">Emp 삭제</button>
+	<br><br>
+	<button id="btnEmpInsertJSON">JSON Emp 등록</button>
+	
+<script>
+	window.onload = function() {
+		// 객체 정보확인
+		document.querySelector("#btnEmpDetail").onclick = async function(){
+			try {
+				let response = await fetch('/empDetail/1500'); // fetchOption default : get
+				let data = await response.json();
+				console.log(data);
+			} catch(error){
+				console.error(error);
+			}
+		}
+		
+		// 객체 리스트 정보 확인
+		document.querySelector("#btnEmpList").onclick = async function(){
+			try {
+				let response = await fetch('/empList');
+				let data = await response.json();
+				console.log(data);
+			} catch(error){
+				console.error(error);
+			}
+		}
+		
+		// 객체 삽입,등록
+		document.querySelector("#btnEmpInsert").onclick = async function(){
+			let urlParams = new URLSearchParams({
+				employeeId: 2000,
+				firstName: "ny",
+				lastName: "Son",
+				email: "sonny@son.com",
+				hireDate: "2020-05-05"
+			});
+			
+			let fetchOptions = {
+				method: "POST",
+				body: urlParams
+			}
+			
+			try {
+				let response = await fetch('/empInsert', fetchOptions); // post
+				let data = await response.json();
+				console.log(data);
+			} catch(error){
+				console.error(error);
+			}
+		}
+
+		// JSON객체 insert
+		let insertJSONData = {
+				employeeId: 2000,
+				firstName: "ny",
+				lastName: "Son",
+				email: "sonny@son.com",
+				hireDate: "2020-05-05"
+		};
+		
+		document.querySelector("#btnEmpInsertJSON").onclick = async function(){
+			let fetchOptions = {
+				method: "POST",
+				headers: {
+					"Content-type" : "application/json"
+				},
+				body: JSON.stringify(insertJSONData)
+			}
+			
+			try {
+				let response = await fetch('/empInsertJSON', fetchOptions); // post
+				let data = await response.json();
+				console.log(data);
+			} catch(error){
+				console.error(error);
+			}
+		}
+
+		// 객체 수정
+		let updateData = {
+			employeeId: 2000,
+			firstName: "흥민",
+			lastName: "손",
+			email: "sonny@son.com",
+			hireDate: "2020-05-05"
+		};
+
+		document.querySelector("#btnEmpUpdate").onclick = async function(){
+			let urlParams = new URLSearchParams(updateData);
+			
+			let fetchOptions = {
+				method: "POST",
+				body: urlParams
+			}
+			
+			try {
+				let response = await fetch('/empUpdate', fetchOptions); // post
+				let data = await response.json();
+				console.log(data);
+			} catch(error){
+				console.error(error);
+			}
+		}
+
+		// 객체 삭제
+		document.querySelector("#btnEmpDelete").onclick = async function(){
+			let fetchOptions = {
+				method: "POST",
+				body: new URLSearchParams({
+					employeeId: 2000
+				})
+			}
+			
+			try {
+				let response = await fetch('/empDelete', fetchOptions); // post
+				let data = await response.json();
+				console.log(data);
+			} catch(error){
+				console.error(error);
+			}
+		}
+		
+	}
+</script>
+</body>
+</html>
