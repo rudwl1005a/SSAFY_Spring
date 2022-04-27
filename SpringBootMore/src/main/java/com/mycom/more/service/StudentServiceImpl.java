@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.mycom.more.dao.StudentDao;
 import com.mycom.more.dto.StudentDto;
@@ -25,7 +26,13 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
+	@Transactional
 	public int insert(StudentDto dto) {
+		dao.insert(dto);
+		{ // 예외를 발생시키는 코드 - for transaction test
+			String str = null;
+			str.length();
+		}
 		return dao.insert(dto);
 	}
 
