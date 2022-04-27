@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CORS Test</title>
+</head>
+<body>
+	<h4>CORS TEST</h4>
+	<hr>
+	<div>
+		<button id="btnGetRequest">GET</button>
+		<button id="btnPostRequest">POST</button>
+		<button id="btnPutRequest">PUT</button>
+	</div>
+	
+<script>
+	window.onload = function(){
+		
+		document.querySelector("#btnGetRequest").onclick = makeGetRequest;
+		document.querySelector("#btnPostRequest").onclick = makePostRequest;
+		document.querySelector("#btnPutRequest").onclick = makePutRequest;
+		
+	}
+	
+	async function makeGetRequest(){
+		try {
+			let response = await fetch("http://localhost:8080/getcors"); // GET
+            let data = await response.json();
+            console.log(data);
+		} catch(error) {
+			console.error(error);
+		}
+	}
+	
+	async function makePostRequest(){
+		let urlParams = new URLSearchParams({
+			param: 1
+		});
+		let fetchOptions = {
+			method: "POST",
+			body: urlParams
+		}
+		try {
+			let response = await fetch("http://localhost:8080/postcors", fetchOptions); // POST
+            let data = await response.json();
+            console.log(data);
+		} catch(error) {
+			console.error(error);
+		}
+	}
+	
+	async function makePutRequest(){
+		let urlParams = new URLSearchParams({
+			param: 1
+		});
+		let fetchOptions = {
+			method: "PUT",
+			body: urlParams
+		}
+		try {
+			let response = await fetch("http://localhost:8080/putcors", fetchOptions); // PUT
+            let data = await response.json();
+            console.log(data);
+		} catch(error) {
+			console.error(error);
+		}
+	}
+</script>
+</body>
+</html>

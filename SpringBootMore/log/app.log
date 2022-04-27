@@ -780,3 +780,372 @@ Consider defining a bean of type 'com.mycom.more.common.TestInterceptor' in your
 2022-04-27 13:59:46.738  INFO 9716 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-04-27 13:59:46.739  INFO 9716 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-04-27 13:59:46.740  INFO 9716 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 14:14:44.035  INFO 9716 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 9716 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 14:14:44.036  INFO 9716 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 14:14:44.251  INFO 9716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 14:14:44.252  INFO 9716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 14:14:44.252  INFO 9716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 14:14:44.267  INFO 9716 --- [restartedMain] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 14:14:44.267  INFO 9716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 230 ms
+2022-04-27 14:14:44.442  INFO 9716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 14:14:44.450  INFO 9716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 14:14:44.454  INFO 9716 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.438 seconds (JVM running for 3342.096)
+2022-04-27 14:14:44.456  INFO 9716 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 14:14:52.094  INFO 9716 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 9716 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 14:14:52.094  INFO 9716 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 14:14:52.291  INFO 9716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 14:14:52.292  INFO 9716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 14:14:52.292  INFO 9716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 14:14:52.301  INFO 9716 --- [restartedMain] o.a.c.c.C.[Tomcat-7].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 14:14:52.301  INFO 9716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 206 ms
+2022-04-27 14:14:52.481  INFO 9716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 14:14:52.490  INFO 9716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 14:14:52.494  INFO 9716 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.419 seconds (JVM running for 3350.136)
+2022-04-27 14:14:52.496  INFO 9716 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 14:15:01.983  INFO 9716 --- [RMI TCP Connection(98)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-04-27 14:17:23.472  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 14:17:23.473  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 14:17:23.509  INFO 14792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-27 14:17:23.510  INFO 14792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-27 14:17:24.432  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 14:17:24.439  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 14:17:24.439  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 14:17:24.490  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 14:17:24.491  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 981 ms
+2022-04-27 14:17:25.101  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 14:17:25.127  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 14:17:25.135  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 1.943 seconds (JVM running for 2.522)
+2022-04-27 14:17:38.046  INFO 14792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 14:17:38.047  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 14:17:38.048  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 14:18:45.560  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 14:18:45.560  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 14:18:45.858  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 14:18:45.859  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 14:18:45.859  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 14:18:45.869  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 14:18:45.870  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 308 ms
+2022-04-27 14:18:46.097  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 14:18:46.108  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 14:18:46.112  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.579 seconds (JVM running for 83.499)
+2022-04-27 14:18:46.114  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 14:18:47.382  INFO 14792 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 14:18:47.383  INFO 14792 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 14:18:47.384  INFO 14792 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 14:24:18.944  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 14:24:18.944  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 14:24:19.168  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 14:24:19.169  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 14:24:19.169  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 14:24:19.177  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 14:24:19.177  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
+2022-04-27 14:24:19.378  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 14:24:19.387  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 14:24:19.390  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.468 seconds (JVM running for 416.777)
+2022-04-27 14:24:19.392  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 14:24:34.111  INFO 14792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 14:24:34.112  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 14:24:34.112  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-27 14:59:26.286  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 14:59:26.286  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 14:59:26.499  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 14:59:26.499  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 14:59:26.499  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 14:59:26.508  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-27 14:59:26.508  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 220 ms
+2022-04-27 14:59:26.521  WARN 14792 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CORSController' defined in file [C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main\com\mycom\more\controller\CORSController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mycom.more.controller.CORSController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "{", ( expected
+	Syntax error on token "}", ) expected
+
+2022-04-27 14:59:26.521  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-27 14:59:26.527  INFO 14792 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-27 14:59:26.547 ERROR 14792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'CORSController' defined in file [C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main\com\mycom\more\controller\CORSController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mycom.more.controller.CORSController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "{", ( expected
+	Syntax error on token "}", ) expected
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.7.jar:2.6.7]
+	at com.mycom.more.SpringBootMoreApplication.main(SpringBootMoreApplication.java:10) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_331]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_331]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_331]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.mycom.more.controller.CORSController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "{", ( expected
+	Syntax error on token "}", ) expected
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "{", ( expected
+	Syntax error on token "}", ) expected
+
+	at com.mycom.more.controller.CORSController.<init>(CORSController.java:11) ~[main/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_331]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_331]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[na:1.8.0_331]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 24 common frames omitted
+
+2022-04-27 15:03:20.229  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:03:20.229  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:03:20.451  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:03:20.452  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:03:20.452  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:03:20.461  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:03:20.461  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 230 ms
+2022-04-27 15:03:20.648  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:03:20.658  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:03:20.661  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.451 seconds (JVM running for 2758.048)
+2022-04-27 15:03:20.662  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:03:38.468  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:03:38.468  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:03:38.666  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:03:38.666  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:03:38.666  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:03:38.674  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:03:38.674  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 204 ms
+2022-04-27 15:03:38.850  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:03:38.859  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:03:38.862  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.415 seconds (JVM running for 2776.249)
+2022-04-27 15:03:38.864  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:03:45.492  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:03:45.493  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:03:45.694  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:03:45.694  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:03:45.694  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:03:45.701  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:03:45.701  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2022-04-27 15:03:45.877  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:03:45.885  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:03:45.888  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.415 seconds (JVM running for 2783.275)
+2022-04-27 15:03:45.889  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:04:01.914  INFO 14792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 15:04:01.914  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 15:04:01.915  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 15:04:02.643  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:04:02.643  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:04:02.851  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:04:02.852  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:04:02.852  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:04:02.859  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:04:02.859  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2022-04-27 15:04:03.036  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:04:03.043  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:04:03.048  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.424 seconds (JVM running for 2800.435)
+2022-04-27 15:04:03.049  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:04:16.295  INFO 14792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 15:04:16.296  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 15:04:16.297  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 15:09:56.076  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:09:56.076  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:09:56.208 ERROR 14792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Unable to load cache item
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:79) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:134) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:319) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:572) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:419) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:137) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:109) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:447) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:268) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:325) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:147) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.7.jar:2.6.7]
+	at com.mycom.more.SpringBootMoreApplication.main(SpringBootMoreApplication.java:10) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_331]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_331]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_331]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: java.lang.NoClassDefFoundError: CorsRegistry
+	at java.lang.Class.getDeclaredMethods0(Native Method) ~[na:1.8.0_331]
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.Class.getDeclaredMethods(Unknown Source) ~[na:1.8.0_331]
+	at org.springframework.cglib.core.ReflectUtils.addAllMethods(ReflectUtils.java:448) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.proxy.Enhancer.getMethods(Enhancer.java:635) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:670) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.transform.TransformingClassGenerator.generateClass(TransformingClassGenerator.java:33) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy.generate(ClassLoaderAwareGeneratorStrategy.java:57) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:358) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:585) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:110) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:108) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.3.19.jar:5.3.19]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[na:1.8.0_331]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.3.19.jar:5.3.19]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: CorsRegistry
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_331]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_331]
+	at java.lang.Class.forName(Unknown Source) ~[na:1.8.0_331]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_331]
+	... 41 common frames omitted
+
+2022-04-27 15:09:58.655  INFO 14792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-27 15:09:58.656  INFO 14792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-27 15:09:58.659  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:09:58.660  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:09:58.857  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:09:58.858  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:09:58.858  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:09:58.865  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:09:58.865  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 204 ms
+2022-04-27 15:09:59.051  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:09:59.060  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:09:59.064  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.42 seconds (JVM running for 3156.452)
+2022-04-27 15:09:59.066  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:11:14.437  INFO 14792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 15:11:14.437  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 15:11:14.438  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 15:11:37.525  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:11:37.525  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:11:37.724  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:11:37.724  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:11:37.724  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:11:37.733  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:11:37.733  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2022-04-27 15:11:37.835  WARN 14792 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+2022-04-27 15:11:37.835  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-27 15:11:37.840  INFO 14792 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-27 15:11:37.843 ERROR 14792 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) [spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) [spring-boot-2.6.7.jar:2.6.7]
+	at com.mycom.more.SpringBootMoreApplication.main(SpringBootMoreApplication.java:10) [main/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_331]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_331]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_331]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]: Factory method 'requestMappingHandlerMapping' threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete BlockStatements
+
+	at com.mycom.more.config.WebMvcConfig.addCorsMappings(WebMvcConfig.java:29) ~[main/:na]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addCorsMappings(WebMvcConfigurerComposite.java:102) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addCorsMappings(DelegatingWebMvcConfiguration.java:93) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getCorsConfigurations(WebMvcConfigurationSupport.java:1163) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerMapping(WebMvcConfigurationSupport.java:315) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.requestMappingHandlerMapping(WebMvcAutoConfiguration.java:445) ~[spring-boot-autoconfigure-2.6.7.jar:2.6.7]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_331]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_331]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_331]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_331]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 25 common frames omitted
+
+2022-04-27 15:11:39.292  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:11:39.292  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:11:39.499  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:11:39.499  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:11:39.500  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:11:39.507  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:11:39.507  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 213 ms
+2022-04-27 15:11:39.714  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:11:39.724  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:11:39.727  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.452 seconds (JVM running for 3257.114)
+2022-04-27 15:11:39.729  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:11:56.438  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:11:56.438  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:11:56.644  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:11:56.645  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:11:56.645  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:11:56.653  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:11:56.653  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
+2022-04-27 15:11:56.837  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:11:56.845  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:11:56.848  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.43 seconds (JVM running for 3274.235)
+2022-04-27 15:11:56.850  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:12:52.151  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:12:52.151  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:12:52.355  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:12:52.356  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:12:52.356  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:12:52.363  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:12:52.363  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 210 ms
+2022-04-27 15:12:52.555  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:12:52.566  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:12:52.571  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.44 seconds (JVM running for 3329.958)
+2022-04-27 15:12:52.572  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:14:03.776  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Starting SpringBootMoreApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 14792 (C:\Users\com\git\SSAFY_Spring\SpringBootMore\bin\main started by User in C:\Users\com\git\SSAFY_Spring\SpringBootMore)
+2022-04-27 15:14:03.776  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:14:03.991  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 15:14:03.992  INFO 14792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 15:14:03.993  INFO 14792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 15:14:04.000  INFO 14792 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 15:14:04.000  INFO 14792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 222 ms
+2022-04-27 15:14:04.193  INFO 14792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 15:14:04.200  INFO 14792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-27 15:14:04.203  INFO 14792 --- [restartedMain] c.mycom.more.SpringBootMoreApplication   : Started SpringBootMoreApplication in 0.446 seconds (JVM running for 3401.59)
+2022-04-27 15:14:04.204  INFO 14792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 15:14:47.541  INFO 14792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 15:14:47.543  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 15:14:47.544  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
