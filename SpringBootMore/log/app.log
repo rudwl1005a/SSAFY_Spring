@@ -1149,3 +1149,4 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2022-04-27 15:14:47.541  INFO 14792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-04-27 15:14:47.543  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-04-27 15:14:47.544  INFO 14792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 15:51:06.205  INFO 14792 --- [RMI TCP Connection(137)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
