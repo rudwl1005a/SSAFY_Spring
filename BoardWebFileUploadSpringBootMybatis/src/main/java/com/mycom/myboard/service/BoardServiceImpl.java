@@ -7,6 +7,7 @@ import java.util.UUID;
 
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,37 +19,22 @@ import com.mycom.myboard.dto.BoardFileDto;
 import com.mycom.myboard.dto.BoardParamDto;
 import com.mycom.myboard.dto.BoardResultDto;
 
-	@Service
-	public class BoardServiceImpl implements BoardService {
+@Service
+public class BoardServiceImpl implements BoardService {
 	
-		@Autowired
-		BoardDao dao;
-		String uploadFolder = "upload";
+	@Autowired
+	BoardDao dao;
 	
-		/* for production code */
-		//uploadPath = getServletContext().getRealPath("/");
-		// C:\Users\com\Desktop\course\ssafy_spring
-		
-		/* for eclipse development code */
-		String uploadPath = "C:" + File.separator + "Users" + File.separator + "com" +  File.separator + "Desktop"
-				+ File.separator + "course" + File.separator + "ssafy_spring"
-				+ File.separator + "BoardFileUploadSpringBootMVCMyBatis" 
-				+ File.separator + "src" 
-				+ File.separator + "main"
-				+ File.separator + "webapp"
-				+ File.separator + "resources"
-				+ File.separator + "static";
-		/* 업로드 후 upload 폴더 refresh 하거나 preferences / workspace - refresh... 2개 option check */
+	// application.properties에서 설정 값 가져옴
+	@Value("${app.fileupload.uploadDir}")
+	String uploadFolder;
+	
+	@Value("${app.fileupload.uploadPath}")
+	String uploadPath;
 		
 	private static final int SUCCESS = 1;
 	private static final int FAIL = -1;
 
-	// 기존 Servlet, JSP 와 다른 점
-	// - 기존은 Controller -> Service 전달되는 객체가 request.getParts()이고, Collection<Part> 타입임.
-	//   Part 에는 getOriginalFilename()가 없다. 그래서 별도의 FileManager 클래스에서 Part 에서 잘라오는 메소드를 만듦
-	// - 파일 확장자를 가져오는 것도 commons.io 를 이용 ( jar 파일관리가 기존은 귀찮고, 또 FileNamager 를 만들었으니 그곳에 확장자를 가져오는 메소드를 추가해서 사용 )
-	//   Spring 은 pom.xml 에 추가만 하면 되므로 commons.io 사용
-	// - 저장도 MultipartFile의 transferTo() 를 사용
 	@Override
 	@Transactional
 	public BoardResultDto boardInsert(BoardDto dto, MultipartHttpServletRequest request) {
