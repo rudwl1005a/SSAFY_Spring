@@ -26,7 +26,7 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
-	@Transactional
+//	@Transactional
 	public int insert(StudentDto dto) {
 		dao.insert(dto);
 		{ // 예외를 발생시키는 코드 - for transaction test
