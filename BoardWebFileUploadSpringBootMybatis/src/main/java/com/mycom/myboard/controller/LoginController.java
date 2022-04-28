@@ -28,7 +28,9 @@ import com.mycom.myboard.service.LoginService;
 			if( userDto != null ) {
 				session.setAttribute("userDto", userDto);
 				
-			    map.put("result", "success");
+			    map.put("result", "success"); // 성공메세지
+			    map.put("userName", userDto.getUserName());
+			    map.put("userProfileImageUrl", userDto.getUserProfileImageUrl());
 				return new ResponseEntity<Map<String, String>>(map, HttpStatus.OK);
 			}
 			map.put("result", "fail");
