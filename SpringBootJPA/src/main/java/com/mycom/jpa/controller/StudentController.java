@@ -64,6 +64,46 @@ public class StudentController {
 			e.printStackTrace();
 			return -1;
 		}
-
 	}
+	
+	
+	@GetMapping("/students/count")
+    public long countStudent() {
+        return service.count();
+    }
+	
+	@GetMapping("/students/page")
+	public List<Student> listStudent(int limit, int offset) {
+	    return service.list(limit, offset);
+	}
+	
+	@GetMapping("/students/studentnm")
+    public List<Student> findByStudentNm(String studentNm) {
+        return service.findByStudentNm(studentNm);
+    }
+	
+	@GetMapping("/students/emailandphone")
+    public List<Student> findByEmailAndPhone(String email, String phone) {
+        return service.findByEmailAndPhone(email, phone);
+    }
+	
+	@GetMapping("/students/emailorphone")
+	public List<Student> findByEmailOrPhone(String email, String phone) {
+		return service.findByEmailOrPhone(email, phone);
+	}
+	
+	@GetMapping("/students/studentnmlike")
+	public List<Student> findByStudentByStudentNmLike(String studentNm) {
+	    return service.findByStudentNmLike(studentNm);
+	}
+	
+	@GetMapping("/students/studentidbetween")
+    public List<Student> findByStudentIdBetween(int from, int to) {
+        return service.findByStudentIdBetween(from, to);
+    }
+	
+	@GetMapping("/students/studentidbetweenorderby")
+    public List<Student> findByStudentIdBetweenOrderByStudentNmDesc(int from, int to) {
+        return service.findByStudentIdBetweenOrderByStudentNmDesc(from, to);
+    }
 }
