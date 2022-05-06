@@ -9,110 +9,75 @@
 	<link rel="stylesheet" href="/css/apt.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </head>
-<body>
-	<!-- NavBar Start -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <div class="container-fluid">
-	    <a class="navbar-brand" href="/index">HappyHouse</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbarNav">
-	      <ul class="navbar-nav">
-	        <li class="nav-item" id="login"></li>
-	        <li class="nav-item" id="logout"></li>
-	        <li class="nav-item">
-	          <a class="nav-link" id="NavbtnRegister" style="cursor: pointer">회원가입</a>
-	        </li>
-	        <li class="nav-item" id="userinfo"></li>
-	        <li class="nav-item">
-	          <a class="nav-link" id="NavbtnApart" style="cursor: pointer">아파트 검색</a>
-	        </li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
-	<!-- NavBar END -->
 
-	<div class="container">
+<body>
+	<custom-navbar></custom-navbar>
+	
+	<div class="container mt-4">
 		<div class="card col-sm-12 mt-1" style="min-height: 600px;">
 			<div class="card-body">
-				<div class="form-group form-inline justify-content-center">
-						<label class="mr-2" for="sido">시도 : </label>
-						<select class="form-select-sm " id="sido">
-							<option value="0">선택</option>
-						</select>
-						<label class="mr-2 ml-3" for="gugun">구군 : </label>
-						<select class="form-select-sm" id="gugun">
-							<option value="0">선택</option>
-						</select>
-						<label class="mr-2 ml-3" for="dong">읍면동 : </label>
-						<select class="form-select-sm" id="dong">
-							<option value="0">선택</option>
-						</select>
-					
-					
-					<label class="mr-2 ml-3" for="aptKeyword">아파트명 : </label>
-					<input type="text" id ="aptKeyword"/>
-					<button type="button" id="btnAptSearch" class="class="mr-2 ml-3"> 검색</button>
-					
-					<!-- 정렬하기와 한 페이지 최대 개수 추가 -->
+				<div class="row">
+					<div class="col form-group form-inline justify-content-center">
+						<div class="row">
+							<select class="col form-select-sm m-2" id="sido">
+								<option value="0">시/도</option>
+							</select>
+							<select class="col form-select-sm m-2" id="gugun">
+								<option value="0">구/군</option>
+							</select>
+							<select class="col form-select-sm m-2" id="dong">
+								<option value="0">읍/면/동</option>
+							</select>
+						</div>
+					</div>
+					<div class="col input-group mb-3 pt-1">
+						<input type="text" class="form-control " placeholder="아파트명" id="aptKeyword">
+						<button class="btn btn-outline-info" type="button" id="btnAptSearch">검색</button>
+					</div>
 				</div>
-				<table class="table mt-2 table-striped">
-					<colgroup>
-						<col width="100">
-						<col width="180">
-						<col width="*">
-						<col width="120">
-						<col width="120">
-					</colgroup>	
-					<thead>
-						<tr>
-							<th>번호</th>
-							<th>아파트이름</th>
-							<th class="text-center">주소</th>
-							<th>건축연도</th>
-							<th>최근거래금액</th>
-						</tr>
-					</thead>
-					<tbody id="searchResult"></tbody>
-				</table>
+					
+				<!-- 정렬하기와 한 페이지 최대 개수 추가 -->
+				<div class="row">
+					<div class="col">
+						<div class="row leftSide">
+							<div class="card">
+							  <ul class="list-group list-group-flush" id="searchResult"></ul>
+							</div>
+						</div>
+						<div id="paginationWrapper" class="row mt-3"></div>   	
+					</div>
+					<div class="col rightSide ">
+						<div id="map" style="width:100%; height:700px;"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	
-<div id="paginationWrapper"></div>   	
-	
-<!-- Modal -->
-<div class="modal fade" id="modalApartDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalApartDetailTitle">아파트 상세 정보</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      	<div class="row" id="divApartInfo">
-      	  
-      	</div>
-      	<div class="row">
-<!--       	  <div class="col-3 scrollspy-example" id="divApartDealScroll" data-bs-spy="scroll"> -->
-<!-- 	      	스크롤과 거래내역 -->
-<!-- 	      </div> -->
-	      <div class="col-9">
-	      	<div id="map" style="width:100%;height:300px;"></div>
+		
+	<!-- Modal -->
+	<div class="modal fade" id="modalApartDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" style="max-width: 100%; width: 60%; display: table;">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="modalApartDetailTitle">아파트 상세 정보</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
-      	</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="btnUserInterestApart">관심 아파트 등록</button>
-      </div>
-    </div>
-  </div>
-</div>	
+	      <div class="modal-body leftSide" style="height: 500px">
+	      	<div class="row" id="divApartInfo"></div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary" id="btnUserInterestApart">관심 아파트 등록</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>	
+	<!-- Modal end -->
+
+	<script src="/js/customTag.js"></script>	
 	<script src="/js/navbar.js"></script>	
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a8f020994a96fc4cd4e8374ac86e3ac9&libraries=services"></script>
 	<script type="text/javascript" src="js/map.js"></script>
@@ -125,6 +90,8 @@
 	var CURRENT_PAGE_INDEX = 1;
 	
 	window.onload = function(){
+		
+		customElements.define('custom-navbar', NavBarClass);
 		
 		navBar();
 		
@@ -265,22 +232,35 @@
 		searchTable.innerHTML = "";
 		
 		data.list.forEach(el => {
-			searchTable.innerHTML += `<tr data-aptCode=${el.aptCode}>
+			/*searchTable.innerHTML += `<tr data-aptCode=${el.aptCode}>
 									  <td>${el.aptCode}</td>
 									  <td>${el.aptName}</td>
 									  <td>${el.sidoName} ${el.gugunName} ${el.dongName} ${el.jibun}</td>
 									  <td>${el.buildYear}</td>
-									  <td>${el.recentPrice}</td>`
+									  <td>${el.recentPrice}</td>`*/
+			searchTable.innerHTML += 
+				`<li class="list-group-item" data-aptCode=${el.aptCode} style="cursor: pointer">
+				    <div class="row">
+		    			<div class="col-2 mt-1">${el.aptCode}</div>
+		    			<div class="col-8"><strong style="font-size: 20px">${el.aptName}</strong></div>
+		    			<div class="col-2 mt-1" style="color: gray">${el.buildYear}</div>
+			    	</div>
+			    	<div class="row m-3" style="font-size: 18px">
+			    		${el.sidoName} ${el.gugunName} ${el.dongName} ${el.jibun}
+			    	</div>
+			    	<div class="row m-2">최근거래금액 : ${el.recentPrice}만원</div>
+			    </li>`
 		});
 		TOTAL_LIST_ITEM_COUNT = data.count;
 		addPagination();
 		
 		//history.pushState(null, null, url);
 		makeListEvetHandler();
+		displayMarkers(data.list);
 	};
 	
 	function makeListEvetHandler(){
-		document.querySelectorAll("#searchResult tr").forEach( el =>{
+		document.querySelectorAll("#searchResult li").forEach( el =>{
 			el.onclick = function(){
 				let aptCode = this.getAttribute("data-aptCode");
 				console.log("detailApart : " + aptCode);
@@ -299,15 +279,24 @@
 		detailModal.show();
 		
 		document.querySelector("#modalApartDetailTitle").innerText = data.aptName;
-		document.querySelector("#divApartInfo").innerHTML=`${data.sidoName} ${data.gugunName} ${data.dongName} ${data.jibun} , ${data.buildYear}년 건축`;
 		
-		let scrollHTML = document.querySelector("#divApartDealScroll");
+		let detailHTML = `<h3>${data.sidoName} ${data.gugunName} ${data.dongName} ${data.jibun} , ${data.buildYear}년 건축</h3>`;
+		let count = 1;
+		data.houseDealList.forEach(el => {
+			detailHTML += `<div>${count++} 전용 면적 : ${el.area}m², 거래 날짜 : ${el.dealYear}-${el.dealMonth}-${el.dealDay}, <strong>거래 금액 : ${el.dealAmount}</strong></div>`
+		});
+							
+		detailHTML += `<br><br><hr><h3>가까운 지하철</h3>`;
+		data.subwayList.forEach(el => {
+			detailHTML += `<div>${el.line} ${el.station}역, 거리 : ${el.distance}km</div>`;
+		});
 		
-//  		data.houseDealList.forEach(el=>{
-//  			scrollHTML.innerHTML+=`<a>${el}</a>`
-//  		});
+		console.log(data.houseDealList);
+		console.log("==================================================================")
+		console.log(data.subwayList);
 		
-		displayMarkers(data);
+		document.querySelector("#divApartInfo").innerHTML = detailHTML;
+		
 	};
 	function addPagination(){
 

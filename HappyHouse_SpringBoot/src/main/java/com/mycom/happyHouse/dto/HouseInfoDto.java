@@ -30,4 +30,5 @@ public class HouseInfoDto {
 	private String recentPrice;
 	
 	private List<HouseDealDto> houseDealList;
+	private List<SubwayDto> subwayList;
 }

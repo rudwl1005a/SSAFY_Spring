@@ -2,6 +2,7 @@ package com.mycom.happyHouse.service;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +11,7 @@ import com.mycom.happyHouse.dto.HouseDealDto;
 import com.mycom.happyHouse.dto.HouseInfoDto;
 import com.mycom.happyHouse.dto.HouseSearchParamDto;
 import com.mycom.happyHouse.dto.HouseSearchResultDto;
+import com.mycom.happyHouse.dto.SubwayDto;
 
 @Service
 public class HouseServiceImpl implements HouseService{
@@ -23,11 +25,13 @@ public class HouseServiceImpl implements HouseService{
 		HouseSearchResultDto result = null;		
 		try {
 			result = new HouseSearchResultDto();
+			
 			int count = dao.getCountHouseInfo(dto);
 			list = dao.getSearchHouseInfo(dto);
 			
 			result.setCount(count);
 			result.setList(list);
+						
 		}catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -45,6 +49,14 @@ public class HouseServiceImpl implements HouseService{
 			
 			dto.setHouseDealList(dao.getHouseDealList(aptCode));
 			
+			List<SubwayDto> subwayList = dao.getSubwayList(aptCode);
+			
+			
+			if(subwayList != null) {
+				subwayList.sort((a,b)-> a.getDistance().compareTo(b.getDistance()) );
+				if(subwayList.size() > 3) subwayList = subwayList.subList(0, 3);
+			}
+			dto.setSubwayList(subwayList);
 		}catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -67,5 +79,5 @@ public class HouseServiceImpl implements HouseService{
 		return list;
 	}
 
-	
+
 }

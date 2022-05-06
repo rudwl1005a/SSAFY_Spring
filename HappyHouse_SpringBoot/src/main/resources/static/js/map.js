@@ -30,37 +30,39 @@ function displayMarkers(places) {
     
 	// 지도에 표시되고 있는 마커를 제거합니다
 	removeMarker();
-	var placePosition = new kakao.maps.LatLng(places.lat, places.lng);
-	var marker = addMarker(placePosition, 0);
-	var itemEl = getListItem(0, places); // 검색 결과 항목 Element를 생성합니다
-	
-	// 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
-	// LatLngBounds 객체에 좌표를 추가합니다
-	bounds.extend(placePosition);
-	
-	// 마커와 검색결과 항목에 mouseover 했을때
-	// 해당 장소에 인포윈도우에 장소명을 표시합니다
-	// mouseout 했을 때는 인포윈도우를 닫습니다
-	(function (marker, title, code, place) {
-		kakao.maps.event.addListener(marker, "click", function () {
-			displayInfowindow(marker, title, place);
-		});
+	for(var i=0; i<places.length; i++) {
+		var placePosition = new kakao.maps.LatLng(places[i].lat, places[i].lng);
+		var marker = addMarker(placePosition, i);
+		var itemEl = getListItem(i, places[i]); // 검색 결과 항목 Element를 생성합니다
+		
+		console.log(places[i].lat, places[i].lng)
+		// 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
+		// LatLngBounds 객체에 좌표를 추가합니다
+		bounds.extend(placePosition);
+		// 마커와 검색결과 항목에 mouseover 했을때
+		// 해당 장소에 인포윈도우에 장소명을 표시합니다
+		// mouseout 했을 때는 인포윈도우를 닫습니다
+		(function (marker, title, code, place) {
+			kakao.maps.event.addListener(marker, "click", function () {
+				displayInfowindow(marker, title, place);
+			});
 
-	    kakao.maps.event.addListener(map, "click", function () {
-	    	console.log(customOverlay);
-	    	customOverlay.setMap(null);
-	    });
+		    kakao.maps.event.addListener(map, "click", function () {
+		    	console.log(customOverlay);
+		    	customOverlay.setMap(null);
+		    });
 
-	    itemEl.onmouseover = function () {
-	    	displayInfowindow(marker, title);
-	    };
+		    itemEl.onmouseover = function () {
+		    	displayInfowindow(marker, title);
+		    };
 
-	    itemEl.onmouseout = function () {
-	    	customOverlay.setMap(null);
-	    };
-	})(marker, places.aptName, places.aptCode, places);
+		    itemEl.onmouseout = function () {
+		    	customOverlay.setMap(null);
+		    };
+		})(marker, places[i].aptName, places[i].aptCode, places[i]);
 
-	fragment.appendChild(itemEl);
+		fragment.appendChild(itemEl);
+	}
 	// 마커를 생성하고 지도에 표시합니다 
 
 	// 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다

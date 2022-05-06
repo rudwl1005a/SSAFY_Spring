@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 import com.mycom.happyHouse.dto.HouseDealDto;
 import com.mycom.happyHouse.dto.HouseInfoDto;
 import com.mycom.happyHouse.dto.HouseSearchParamDto;
-import com.mycom.happyHouse.dto.HouseSearchResultDto;
+import com.mycom.happyHouse.dto.SubwayDto;
 
 @Mapper
 public interface HouseDao {
@@ -19,4 +19,6 @@ public interface HouseDao {
 	
 	List<HouseDealDto> getHouseDealList(int aptCode);
 	
+	
+	List<SubwayDto> getSubwayList(int aptCode);
 }

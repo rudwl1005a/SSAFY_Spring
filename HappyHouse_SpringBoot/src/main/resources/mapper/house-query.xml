@@ -5,7 +5,7 @@
 
 	<!-- 통합 검색 쿼리 -->
    <select id="getSearchHouseInfo" parameterType="com.mycom.happyHouse.dto.HouseSearchParamDto" resultType="com.mycom.happyHouse.dto.HouseInfoDto">
-		select h.aptCode, h.aptName, h.buildyear, h.dongName, h.jibun, si.sidoname, gu.gugunname,
+		select h.aptCode, h.aptName, h.buildyear, h.dongName, h.jibun, si.sidoname, gu.gugunname, h.lat, h.lng,
 				(select dealAmount from housedeal where aptCode = h.aptCode and no = (select max(no) from housedeal where aptCode = h.aptCode)) recentPrice
 		from houseinfo h 
 		left join sidocode si
@@ -64,4 +64,18 @@
 		where aptCode = #{aptCode}
 	</select>
 
+	<!-- 지하철 후보군 검색 쿼리 -->
+	<select id="getSubwayList" parameterType="int" resultType="com.mycom.happyHouse.dto.SubwayDto">
+	   <![CDATA[
+		SELECT subway_id, line, station, sub.lat, sub.lng,
+		LEFT((6371*acos(cos(radians( apt.lat ))*cos(radians( sub.lat) )*cos( radians( sub.lng )
+			-radians( apt.lng ))+sin(radians( apt.lat ))*sin( radians(sub.lat )))), 5) AS distance  
+		FROM subway sub, 
+		(SELECT lat, lng FROM houseinfo where aptCode = #{aptCode}) as apt
+		WHERE (6371*acos( cos( radians( apt.lat )) * cos(radians( sub.lat )) * cos(radians( sub.lng )
+			-radians( apt.lng ))+sin( radians( apt.lat ))*sin( radians( sub.lat )))) <= 2
+		]]>
+	</select>
+	
+	
 </mapper>
