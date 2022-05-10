@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <h4>학생 관리</h4>
+        <form action="">
+            <input type="text" v-model="student.studentId">
+        </form>
+        {{ student.studentId }}
+        <br>
+        <button @click="deleteStudent">삭제</button>
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    student: {},
+                }
+            },
+            methods: {
+                async deleteStudent() {
+                    try {
+                        let response = await axios.delete('http://localhost:8080/vue/students/' + this.student.studentId, this.student);
+                        let { data } = response;
+                        console.log(data);
+                        if(data == 1){
+                            alert('삭제 성공!')
+                        } else {
+                            alert('삭제 실패!')
+                        }
+                    } catch (error) {
+                        console.error(error);
+                    }
+                }
+            },
+        });
+    </script>
+</body>
+</html>
