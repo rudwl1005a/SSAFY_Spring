@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    
+        <div id="app">
+            <h4>학생 관리</h4>
+            <hr>
+            <student-list :student-list="studentList" @call-parent-detail="detailStudent"></student-list>
+            <hr>
+            <student-detail :student="student"></student-detail>
+            <hr>
+            <div>
+                <button @click="insertStudent">등록</button>
+                <button @click="updateStudent">수정</button>
+                <button @click="deleteStudent">삭제</button>
+                <button @click="clear">초기화</button>
+            </div>
+        </div>
+            
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="module">
+            import studentList from './component/studentList.js';
+            import studentDetail from './component/studentDetail.js';
+    
+            Vue.component(
+                'student-list', studentList
+            );
+    
+            Vue.component(
+                'student-detail', studentDetail
+            );
+            
+            new Vue({
+                el: '#app',
+                data() {
+                    return {
+                        studentList: [],
+                        student: {},
+                    }
+                },
+                methods: {
+                    async listStudent() {
+                        try {
+                            let response = await axios.get('http://localhost:8080/vue/students');
+                            let { data } = response;
+                            console.log(data);
+                            this.studentList = data;
+                        } catch (error) {
+                            console.error(error);
+                        }
+                    },
+                    async detailStudent(studentId) {
+                        try {
+                            let response = await axios.get('http://localhost:8080/vue/students/' + studentId);
+                            let { data } = response;
+                            this.student = data;
+                        } catch (error) {
+                            console.error(error);
+                        }
+                    },
+                    async insertStudent() {
+                        try {
+                            let response = await axios.post('http://localhost:8080/vue/students', this.student);
+                            let { data } = response;
+                            console.log(data);
+                            if(data == 1){
+                                alert('등록 성공!')
+                                this.listStudent();
+                                this.clear();
+                            }
+                        } catch (error) {
+                            console.error(error);
+                        }
+                    },
+                    async updateStudent() {
+                        try {
+                            let response = await axios.put('http://localhost:8080/vue/students/' + this.student.studentId, this.student);
+                            let { data } = response;
+                            console.log(data);
+                            if(data == 1){
+                                alert('수정 성공!')
+                                this.listStudent();
+                                this.clear();
+                            }
+                        } catch (error) {
+                            console.error(error);
+                        }
+                    },
+                    async deleteStudent() {
+                        try {
+                            let response = await axios.delete('http://localhost:8080/vue/students/' + this.student.studentId, this.student);
+                            let { data } = response;
+                            console.log(data);
+                            if(data == 1){
+                                alert('삭제 성공!')
+                                this.listStudent();
+                                this.clear();
+                            }
+                        } catch (error) {
+                            console.error(error);
+                        }
+                    },
+                    clear() {
+                        this.student = {};
+                    }
+                },
+                created() {
+                    this.listStudent();
+                },
+                
+            });
+        </script>
+    </body>
+    </html>
+        
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module">
+        import studentList from './component/studentList.js';
+        import studentDetail from './component/studentDetail.js';
+
+        Vue.component(
+            'student-list', studentList
+        );
+
+        Vue.component(
+            'student-detail', studentDetail
+        );
+
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    studentList: [],
+                    student: {},
+                }
+            },
+            methods: {
+                async listStudent() {
+                    try {
+                        let response = await axios.get('http://localhost:8080/vue/students');
+                        let { data } = response;
+                        console.log(data);
+                        this.studentList = data;
+                    } catch (error) {
+                        console.error(error);
+                    }
+                },
+                async detailStudent(studentId) {
+                    try {
+                        let response = await axios.get('http://localhost:8080/vue/students/' + studentId);
+                        let { data } = response;
+                        this.student = data;
+                    } catch (error) {
+                        console.error(error);
+                    }
+                },
+                async insertStudent() {
+                    try {
+                        let response = await axios.post('http://localhost:8080/vue/students', this.student);
+                        let { data } = response;
+                        console.log(data);
+                        if(data == 1){
+                            alert('등록 성공!')
+                            this.listStudent();
+                            this.clear();
+                        }
+                    } catch (error) {
+                        console.error(error);
+                    }
+                },
+                async updateStudent() {
+                    try {
+                        let response = await axios.put('http://localhost:8080/vue/students/' + this.student.studentId, this.student);
+                        let { data } = response;
+                        console.log(data);
+                        if(data == 1){
+                            alert('수정 성공!')
+                            this.listStudent();
+                            this.clear();
+                        }
+                    } catch (error) {
+                        console.error(error);
+                    }
+                },
+                async deleteStudent() {
+                    try {
+                        let response = await axios.delete('http://localhost:8080/vue/students/' + this.student.studentId, this.student);
+                        let { data } = response;
+                        console.log(data);
+                        if(data == 1){
+                            alert('삭제 성공!')
+                            this.listStudent();
+                            this.clear();
+                        }
+                    } catch (error) {
+                        console.error(error);
+                    }
+                },
+                clear() {
+                    this.student = {};
+                }
+            },
+            created() {
+                this.listStudent();
+            },
+            
+        });
+    </script>
+</body>
+</html>
