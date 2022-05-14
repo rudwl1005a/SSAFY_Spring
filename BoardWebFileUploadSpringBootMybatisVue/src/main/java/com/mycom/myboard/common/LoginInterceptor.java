@@ -15,26 +15,24 @@ import com.mycom.myboard.dto.UserDto;
 public class LoginInterceptor implements HandlerInterceptor{ // HandlerInterceptorAdapter 는 deprecated
 	@Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-
-		//async
-		String async = request.getHeader("async");
 		
+		System.out.println(">>>>>> " + request.getRequestURI());
         HttpSession session = request.getSession();
         UserDto userDto = (UserDto) session.getAttribute("userDto");
+        
+        // cors put, delete 대응
+        if(request.getMethod().equals("OPTIONS")) {
+        	return true;
+        }
+        
         if( userDto == null ) {
-        	
-        	if("true".equals(async)) {
-        		System.out.println("async");
-				Gson gson = new Gson();
+        	Gson gson = new Gson();
 
-				JsonObject jsonObject = new JsonObject();
-				jsonObject.addProperty("result", "login");
-				
-				String jsonStr = gson.toJson(jsonObject);
-				response.getWriter().write(jsonStr);
-			}else {
-				response.sendRedirect("/login");
-			}
+			JsonObject jsonObject = new JsonObject();
+			jsonObject.addProperty("result", "login");
+			
+			String jsonStr = gson.toJson(jsonObject);
+			response.getWriter().write(jsonStr);
 
         	return false;
         }
