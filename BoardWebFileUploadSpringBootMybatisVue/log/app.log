@@ -1,214 +1,29 @@
-2022-05-13 09:42:52.054  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 09:42:52.055  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 09:42:52.088  INFO 15580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-13 09:42:52.089  INFO 15580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-13 09:42:52.983  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 09:42:52.991  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 09:42:52.991  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 09:42:53.045  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 09:42:53.045  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 956 ms
-2022-05-13 09:42:53.668  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 09:42:53.696  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 09:42:53.705  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 1.954 seconds (JVM running for 2.554)
-2022-05-13 09:43:06.305  INFO 15580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-13 09:43:06.305  INFO 15580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-13 09:43:06.306  INFO 15580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-05-13 09:45:39.335  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 09:45:39.336  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 09:45:39.555  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 09:45:39.556  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 09:45:39.556  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 09:45:39.565  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 09:45:39.565  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 227 ms
-2022-05-13 09:45:39.702  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 09:45:39.712  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 09:45:39.716  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.406 seconds (JVM running for 168.565)
-2022-05-13 09:45:39.718  INFO 15580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 09:45:43.126  INFO 15580 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-13 09:45:43.128  INFO 15580 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-13 09:45:43.129  INFO 15580 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-05-13 09:45:43.169  INFO 15580 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-13 09:45:43.638  INFO 15580 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-13 09:46:08.639  INFO 15580 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-05-13 09:46:08.647  INFO 15580 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-05-13 09:46:08.770  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 09:46:08.771  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 09:46:08.989  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 09:46:08.989  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 09:46:08.990  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 09:46:08.999  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 09:46:09.000  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 225 ms
-2022-05-13 09:46:09.130  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 09:46:09.139  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 09:46:09.142  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.412 seconds (JVM running for 197.992)
-2022-05-13 09:46:09.145  INFO 15580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 09:47:20.712  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 09:47:20.713  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 09:47:20.915  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 09:47:20.916  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 09:47:20.916  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 09:47:20.927  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 09:47:20.928  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 214 ms
-2022-05-13 09:47:21.045  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 09:47:21.053  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 09:47:21.056  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.365 seconds (JVM running for 269.905)
-2022-05-13 09:47:21.058  INFO 15580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 09:48:32.581  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 09:48:32.581  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 09:48:32.769  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 09:48:32.769  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 09:48:32.769  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 09:48:32.777  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 09:48:32.777  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 194 ms
-2022-05-13 09:48:32.890  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 09:48:32.898  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 09:48:32.902  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.343 seconds (JVM running for 341.751)
-2022-05-13 09:48:32.904  INFO 15580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 09:48:46.623  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 09:48:46.624  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 09:48:46.805  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 09:48:46.806  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 09:48:46.806  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 09:48:46.814  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 09:48:46.814  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
-2022-05-13 09:48:46.924  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 09:48:46.932  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 09:48:46.936  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.334 seconds (JVM running for 355.785)
-2022-05-13 09:48:46.938  INFO 15580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 09:48:55.596  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 09:48:55.597  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 09:48:55.788  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 09:48:55.789  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 09:48:55.789  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 09:48:55.797  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 09:48:55.797  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 199 ms
-2022-05-13 09:48:55.906  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 09:48:55.913  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 09:48:55.920  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.344 seconds (JVM running for 364.768)
-2022-05-13 09:48:55.921  INFO 15580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 09:59:29.434  INFO 15580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-13 09:59:29.435  INFO 15580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-13 09:59:29.435  INFO 15580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-05-13 10:24:26.793  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 10:24:26.793  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 10:24:26.979  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 10:24:26.980  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 10:24:26.980  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 10:24:26.989  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 10:24:26.989  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 194 ms
-2022-05-13 10:24:27.108  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 10:24:27.116  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 10:24:27.119  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.346 seconds (JVM running for 2495.968)
-2022-05-13 10:24:27.123  INFO 15580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 10:25:45.613  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 15580 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 10:25:45.613  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 10:25:45.833  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 10:25:45.834  INFO 15580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 10:25:45.834  INFO 15580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 10:25:45.846  INFO 15580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 10:25:45.846  INFO 15580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
-2022-05-13 10:25:45.960  INFO 15580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 10:25:45.967  INFO 15580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 10:25:45.970  INFO 15580 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.386 seconds (JVM running for 2574.819)
-2022-05-13 10:25:45.972  INFO 15580 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 10:25:49.931  INFO 15580 --- [RMI TCP Connection(69)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-05-13 13:04:39.044  INFO 21468 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 21468 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 13:04:39.046  INFO 21468 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 13:04:39.079  INFO 21468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-13 13:04:39.080  INFO 21468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-13 13:04:39.983  INFO 21468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 13:04:39.992  INFO 21468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 13:04:39.992  INFO 21468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 13:04:40.041  INFO 21468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 13:04:40.042  INFO 21468 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 961 ms
-2022-05-13 13:04:40.649  INFO 21468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 13:04:40.669  WARN 21468 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-2022-05-13 13:04:40.673  INFO 21468 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2022-05-13 13:04:40.684  INFO 21468 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-05-13 13:04:40.701 ERROR 21468 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2022-05-13 13:05:25.246  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 12424 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 13:05:25.247  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 13:05:25.278  INFO 12424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-13 13:05:25.278  INFO 12424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-13 13:05:26.126  INFO 12424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 13:05:26.134  INFO 12424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 13:05:26.134  INFO 12424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 13:05:26.181  INFO 12424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 13:05:26.182  INFO 12424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 903 ms
-2022-05-13 13:05:26.730  INFO 12424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 13:05:26.766  INFO 12424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 13:05:26.775  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 1.798 seconds (JVM running for 2.376)
-2022-05-13 13:05:36.856  INFO 12424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-13 13:05:36.857  INFO 12424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-13 13:05:36.858  INFO 12424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-05-13 13:07:23.719  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 12424 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 13:07:23.720  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 13:07:23.954  INFO 12424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 13:07:23.954  INFO 12424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 13:07:23.955  INFO 12424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 13:07:23.965  INFO 12424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 13:07:23.965  INFO 12424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 242 ms
-2022-05-13 13:07:24.099  INFO 12424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 13:07:24.107  INFO 12424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 13:07:24.111  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.423 seconds (JVM running for 119.712)
-2022-05-13 13:07:24.112  INFO 12424 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 13:07:38.860  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 12424 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 13:07:38.861  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 13:07:39.084  INFO 12424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 13:07:39.084  INFO 12424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 13:07:39.085  INFO 12424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 13:07:39.093  INFO 12424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 13:07:39.094  INFO 12424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
-2022-05-13 13:07:39.237  INFO 12424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 13:07:39.246  INFO 12424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 13:07:39.248  INFO 12424 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 0.41 seconds (JVM running for 134.85)
-2022-05-13 13:07:39.250  INFO 12424 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-05-13 13:08:38.545  INFO 12424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-13 13:08:38.546  INFO 12424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-13 13:08:38.547  INFO 12424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-05-13 13:08:38.588  INFO 12424 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-13 13:08:38.971  INFO 12424 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-13 16:57:14.281  INFO 12424 --- [http-nio-8080-exec-3] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [Authorization=Basic dGVsZWNvbWFkbWluOnN1cGVyYWRtaW4=] that contained an invalid cookie. That cookie will be ignored.
- Note: further occurrences of this error will be logged at DEBUG level.
-2022-05-13 17:24:53.216  INFO 12424 --- [RMI TCP Connection(274)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-05-13 17:24:53.331  INFO 12424 --- [RMI TCP Connection(274)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-05-13 17:24:53.335  INFO 12424 --- [RMI TCP Connection(274)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-05-13 17:25:01.390  INFO 9332 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 9332 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
-2022-05-13 17:25:01.391  INFO 9332 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
-2022-05-13 17:25:01.423  INFO 9332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-05-13 17:25:01.423  INFO 9332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-05-13 17:25:02.297  INFO 9332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-05-13 17:25:02.304  INFO 9332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-05-13 17:25:02.304  INFO 9332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
-2022-05-13 17:25:02.359  INFO 9332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-05-13 17:25:02.360  INFO 9332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 937 ms
-2022-05-13 17:25:02.943  INFO 9332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-05-13 17:25:02.970  INFO 9332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-05-13 17:25:02.979  INFO 9332 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 1.866 seconds (JVM running for 2.453)
-2022-05-13 17:25:11.931  INFO 9332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-05-13 17:25:11.932  INFO 9332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-05-13 17:25:11.933  INFO 9332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-05-13 17:25:20.086  INFO 9332 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-05-13 17:25:20.465  INFO 9332 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-05-13 17:44:25.718  INFO 9332 --- [http-nio-8080-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+2022-05-16 13:17:09.480  INFO 12452 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Starting BoardWebFileUploadSpringBootMybatisVueApplication using Java 1.8.0_331 on DESKTOP-DPVKI2K with PID 12452 (C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue\bin\main started by User in C:\Users\com\git\SSAFY_Spring\BoardWebFileUploadSpringBootMybatisVue)
+2022-05-16 13:17:09.484  INFO 12452 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : No active profile set, falling back to 1 default profile: "default"
+2022-05-16 13:17:09.583  INFO 12452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-16 13:17:09.585  INFO 12452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-16 13:17:11.965  INFO 12452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-16 13:17:11.986  INFO 12452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-16 13:17:11.987  INFO 12452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-16 13:17:12.191  INFO 12452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-16 13:17:12.191  INFO 12452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2605 ms
+2022-05-16 13:17:13.261  INFO 12452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-16 13:17:13.321  INFO 12452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-16 13:17:13.332  INFO 12452 --- [restartedMain] ileUploadSpringBootMybatisVueApplication : Started BoardWebFileUploadSpringBootMybatisVueApplication in 4.627 seconds (JVM running for 6.38)
+2022-05-16 13:17:20.606  INFO 12452 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-16 13:17:20.607  INFO 12452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-16 13:17:20.607  INFO 12452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-16 13:17:20.670  INFO 12452 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-16 13:17:21.055  INFO 12452 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-16 13:17:58.348  WARN 12452 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-05-16 13:18:02.820  WARN 12452 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-05-16 13:19:35.193  WARN 12452 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-05-16 13:19:58.938  WARN 12452 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-05-16 13:19:59.687  WARN 12452 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-05-16 17:28:44.938  INFO 12452 --- [http-nio-8080-exec-7] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
  Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
 
-java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xb10x010x000x000xad0x030x030x980x1bE0xb80&T0x0d0xbe0xdf0xcd)0xe10x06E0xda0x930xce0xd80x1b0x0a0x140x8fN0xcc0x1a0xd20x880x86[0xcc0x9d0x000x000x1a0xc0/0xc0+0xc00x110xc00x070xc00x130xc00x090xc00x140xc00x0a0x000x050x00/0x0050xc00x120x000x0a0x010x000x00j3t0x000x000x000x000x000x130x000x110x000x000x0e175.197.25.2470x000x050x000x050x010x000x000x000x000x000x0a0x000x080x000x060x000x170x000x180x000x190x000x0b0x000x020x010x000x000x0d0x000x100x000x0e0x040x010x040x030x020x010x020x030x040x010x050x010x060x010xff0x010x000x010x000x000x100x000x170x000x150x02h20x08http/1.10x08spdy/3.1...]. HTTP method names must be tokens
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000x8c0x010x000x000x880x030x03B0x920xa5#*0xe30x8e!,70xdc0xac0xdb0xa30x070xf2'0x11l!0xd5|0xe00xa20xbc0xa6U0xed0xfdL0xc90xda0x000x000x1a0xc0/0xc0+0xc00x110xc00x070xc00x130xc00x090xc00x140xc00x0a0x000x050x00/0x0050xc00x120x000x0a0x010x000x00E0x000x000x000x130x000x110x000x000x0e175.197.25.2470x000x050x000x050x010x000x000x000x000x000x0a0x000x080x000x060x000x170x000x180x000x190x000x0b0x000x020x010x000x000x0d0x000x0a0x000x080x040x010x040x030x020x010x020x030xff0x010x000x010x00...]. HTTP method names must be tokens
 	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.62.jar:9.0.62]
@@ -220,6 +35,6 @@ java.lang.IllegalArgumentException: Invalid character found in method name [0x16
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.62.jar:9.0.62]
 	at java.lang.Thread.run(Unknown Source) [na:1.8.0_331]
 
-2022-05-13 17:44:46.351  INFO 9332 --- [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2022-05-13 17:44:46.462  INFO 9332 --- [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-05-13 17:44:46.470  INFO 9332 --- [RMI TCP Connection(29)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-16 18:16:36.299  INFO 12452 --- [RMI TCP Connection(309)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-16 18:16:36.412  INFO 12452 --- [RMI TCP Connection(309)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-16 18:16:36.418  INFO 12452 --- [RMI TCP Connection(309)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
