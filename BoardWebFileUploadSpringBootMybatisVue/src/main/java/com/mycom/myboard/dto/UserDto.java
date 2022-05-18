@@ -21,6 +21,8 @@ public class UserDto {
 	private String userProfileImageUrl;
 	private Date userRegisterDate;
 
+	private String userClsf; // 회원 구분 코드
+	private String userClsfName; // 회원 구분 명
 	
 	public void setUserProfileImageUrl(String userProfileImageUrl) {
 		if (userProfileImageUrl == null || "null".equals(userProfileImageUrl) || "".equals(userProfileImageUrl)) {

@@ -3,8 +3,8 @@
 <mapper namespace="com.mycom.myboard.dao.UserDao">
 
 	<insert id="userRegister" parameterType="com.mycom.myboard.dto.UserDto">
-		insert into users (   user_name,   user_password,   user_email,  user_profile_image_url, user_register_date ) 
-		             values (  #{userName}, #{userPassword}, #{userEmail}, '', now() )
+		insert into users (   user_name,   user_password,   user_email,  user_profile_image_url, user_register_date, user_clsf ) 
+		             values (  #{userName}, #{userPassword}, #{userEmail}, '', now(), #{userClsf} )
 	</insert>
 
 </mapper>
